@@ -5,7 +5,7 @@
       dark
     </span>
   </button>
-  <button id="themeButton" v-if="themeStore.darkTheme" class="themeSwitcher" :class="{ dark: themeStore.darkTheme }" @click="themeStore.toggleTheme()">
+  <button id="themeButton" v-else class="themeSwitcher" :class="{ dark: themeStore.darkTheme }" @click="themeStore.toggleTheme()">
     <IconTheme />
     <span class="themeSwitcherSpanDark">
       light
