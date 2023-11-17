@@ -1,0 +1,19 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+}
+
+a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 0.4s;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+}
