@@ -2,7 +2,7 @@ import {ref} from 'vue';
 import {defineStore} from 'pinia';
 import router from '@/router';
 
-export const useThemeStore = defineStore('theme', {
+export const useThemeStore = defineStore('ThemeSwitcherStore', {
   state: () => {
     const theme = ref<string>(localStorage.getItem('theme') || 'dark')
 
