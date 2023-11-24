@@ -1,4 +1,5 @@
-export const ROUTES_PATHS = {
+export const RoutesPaths = {
   HOME: '/',
   ABOUT: '/about',
+  LOGIN: '/login',
 }

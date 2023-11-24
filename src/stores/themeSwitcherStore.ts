@@ -1,22 +1,24 @@
 import {ref} from 'vue';
 import {defineStore} from 'pinia';
+import router from '@/router';
 
 export const useThemeStore = defineStore('theme', {
   state: () => {
-    const darkTheme = ref<boolean>(false)
+    const theme = ref<string>(localStorage.getItem('theme') || 'dark')
 
-    function toggleTheme() {
-      darkTheme.value = !darkTheme.value; 
-      
-        if (darkTheme.value) {
-          document.body.classList.add('dark')
-        } else {
-          document.body.classList.remove('dark')
-        }
+    if (!router.currentRoute.value.query.theme) {
+      router.replace({ query: { ...router.currentRoute.value.query, theme: [theme.value] } })
+    }
+
+    const toggleTheme = () => {
+      theme.value = theme.value === 'light' ? 'dark' : 'light'
+      localStorage.setItem('theme', theme.value);
+
+      router.push({  query: { ...router.currentRoute.value.query, theme: [theme.value] } })
     }
 
     return {
-      darkTheme,
+      theme,
       toggleTheme
     }
   }

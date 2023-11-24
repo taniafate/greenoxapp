@@ -12,7 +12,7 @@
   font-size: 11px;
   color: white;
   padding: 0 4px 0 0;
-  background: #006E18;
+  background: #048921;
 
   .themeSwitcherSpan {
     display: block;
@@ -24,7 +24,7 @@
 .themeSwitcher:hover {
   scale: 1.02;
   transition: all 0.1s ease-in;
-  background: #005212;
+  background: black;
 }
 
 .themeSwitcher:focus {
@@ -41,5 +41,5 @@
 }
 
 .themeSwitcher.dark:hover {
-  background: #393939;
+  background: none;
 }

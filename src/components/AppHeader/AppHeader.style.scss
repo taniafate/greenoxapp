@@ -7,5 +7,9 @@
   width: 100%;
   padding: 0px 10px 0px 10px;
   align-items: center;
-  background-color: #006E18;
+  background: linear-gradient(180deg, #068421 0%, #009621 100%);
+}
+
+.header.dark {
+  background: #373737;
 }

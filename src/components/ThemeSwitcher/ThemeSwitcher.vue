@@ -1,11 +1,11 @@
 <template>
-  <button id="themeButton" v-if="!themeStore.darkTheme" class="themeSwitcher" :class="{ dark: themeStore.darkTheme }" @click="themeStore.toggleTheme()">
+  <button id="themeButton" v-if="themeStore.theme !== 'dark'" class="themeSwitcher" :class="{ dark: themeStore.theme === 'dark' }" @click="themeStore.toggleTheme()">
     <IconTheme />
     <span class="themeSwitcherSpan">
       dark
     </span>
   </button>
-  <button id="themeButton" v-else class="themeSwitcher" :class="{ dark: themeStore.darkTheme }" @click="themeStore.toggleTheme()">
+  <button id="themeButton" v-else class="themeSwitcher" :class="{ dark: themeStore.theme === 'dark' }" @click="themeStore.toggleTheme()">
     <IconTheme />
     <span class="themeSwitcherSpan">
       light
@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts"> 
-import {useThemeStore} from "@/stores/themeSwitcherStore";
+import {useThemeStore} from "@/stores/ThemeSwitcherStore";
 import IconTheme from '../../components/icons/IconTheme.vue';
 
 const themeStore = useThemeStore();
@@ -22,4 +22,4 @@ const themeStore = useThemeStore();
 
 <style src="./ThemeSwitcher.style.scss" lang="scss" scoped>
   
-</style>@/stores/themeSwitcherStore
+</style>@/stores/themeSwitcherStore@/stores/ThemeSwitcherStore

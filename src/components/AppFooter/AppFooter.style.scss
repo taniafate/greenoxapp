@@ -4,8 +4,12 @@
   justify-content: center;
   width: 100%;
   height: 56px;
-  background: #006E18;
+  background: linear-gradient(180deg, #068421 0%, #009621 100%);
   color: white;
   font-size: 12px;
   align-items: center;
+}
+
+.footer.dark {
+  background: #373737;
 }
