@@ -2,7 +2,7 @@
   <div class="home-wrapper">
     <AppContainer class="home-container" :width="1200" :is-full-width="false">
       <PlanetEvents />
-      <div class="decorator" :class="{ dark: themeStore.theme === 'dark'}">
+      <div class="decorator">
         <div class="decorator-content">
           <EventSticker class="decorator-sticker" />
         </div>
@@ -17,10 +17,6 @@
 import AppContainer from '../components/AppContainer/AppContainer.vue';
 import PlanetEvents from '../components/PlanetEvents/PlanetEvents.vue';
 import EventSticker from '../components/pictures/EventSticker.vue';
-import {useThemeStore} from '../stores/ThemeSwitcherStore';
-
-const themeStore = useThemeStore();
-
 </script>
 
 <style lang="scss" scoped>
