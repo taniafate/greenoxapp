@@ -21,7 +21,7 @@
       </div>
     </div>
   </div>
-  
+  <div v-else class="card-default" :class="{ dark: themeStore.theme === 'dark' }"></div>
 </template>
 
 <script setup lang="ts">
