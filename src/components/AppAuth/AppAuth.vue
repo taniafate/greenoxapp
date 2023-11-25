@@ -14,11 +14,11 @@
 
 <script setup lang="ts">
 
-import {useThemeStore} from "@/stores/ThemeSwitcherStore";
+import {useThemeStore} from "@/stores/ThemeToggleStore.js";
 
 const themeStore = useThemeStore();
 </script>
 
 <style src="./AppAuth.style.scss" lang="scss" scoped>
 
-</style>
+</style>@/stores/ThemeToggleStore

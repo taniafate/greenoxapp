@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { useThemeStore } from '@/stores/ThemeSwitcherStore';
+import { useThemeStore } from '@/stores/ThemeToggleStore.js';
 
 
 const themeStore = useThemeStore();
@@ -17,4 +17,4 @@ const themeStore = useThemeStore();
 
 <style src="./AppFooter.style.scss" lang="scss" scoped>
 
-</style>
+</style>@/stores/ThemeToggleStore

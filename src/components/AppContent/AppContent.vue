@@ -10,7 +10,7 @@
 import { computed } from 'vue';
 import AppContainer from '../AppContainer/AppContainer.vue';
 import { useMedia } from '../../composables/useMedia';
-import { useThemeStore } from '@/stores/ThemeSwitcherStore';
+import { useThemeStore } from '@/stores/ThemeToggleStore';
 
 
 const themeStore = useThemeStore();
@@ -25,4 +25,4 @@ const deviceWidth = computed(() => {
 
 </script>
 
-<style src="./AppContent.style.scss" lang="scss" scoped />
+<style src="./AppContent.style.scss" lang="scss" scoped />@/stores/ThemeToggleStore

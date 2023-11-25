@@ -15,7 +15,7 @@
 
 <script setup lang="ts"> 
 import IconTheme from '../icons/IconTheme.vue';
-import { useThemeStore } from '@/stores/ThemeSwitcherStore';
+import { useThemeStore } from '@/stores/ThemeToggleStore';
 
 const themeStore = useThemeStore();
 
@@ -23,4 +23,4 @@ const themeStore = useThemeStore();
 
 <style src="./ThemeSwitcher.style.scss" lang="scss" scoped>
   
-</style>
+</style>@/stores/ThemeToggleStore

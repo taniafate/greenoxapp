@@ -28,7 +28,7 @@
 import { usePlanetEventsStore } from '@/stores/PlanetEventsStore';
 import { onMounted } from 'vue';
 import IconGeo from '../icons/IconGeo.vue';
-import { useThemeStore } from '@/stores/ThemeSwitcherStore';
+import { useThemeStore } from '@/stores/ThemeToggleStore';
 
 const themeStore = useThemeStore();
 const store = usePlanetEventsStore();
@@ -40,4 +40,4 @@ onMounted(() => {
 
 </script>
 
-<style src="./PlanetEvents.style.scss" lang="scss" scoped />
+<style src="./PlanetEvents.style.scss" lang="scss" scoped />@/stores/ThemeToggleStore

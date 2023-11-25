@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { useThemeStore } from '@/stores/ThemeSwitcherStore';
+import { useThemeStore } from '@/stores/ThemeToggleStore';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher.vue';
 import AppLogo from '../UI/AppLogo/AppLogo.vue';
 import AppNavBar from '../UI/AppNavBar/AppNavBar.vue';
@@ -20,4 +20,4 @@ const themeStore = useThemeStore();
 
 <style src="./AppHeader.style.scss" lang="scss" scoped>
 
-</style>
+</style>@/stores/ThemeToggleStore
