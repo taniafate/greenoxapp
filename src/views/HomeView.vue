@@ -14,7 +14,7 @@
 
 <script setup lang="ts">
 
-import { useThemeStore } from '@/stores/ThemeSwitcherStore';
+import { useThemeStore } from '../stores/ThemeSwitcherStore';
 import AppContainer from '../components/AppContainer/AppContainer.vue';
 import PlanetEvents from '../components/PlanetEvents/PlanetEvents.vue';
 import EventSticker from '../components/pictures/EventSticker.vue';
