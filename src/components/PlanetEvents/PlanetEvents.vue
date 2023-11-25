@@ -28,7 +28,7 @@
 import { usePlanetEventsStore } from '@/stores/PlanetEventsStore';
 import { onMounted } from 'vue';
 import IconGeo from '../icons/IconGeo.vue';
-import {useThemeStore} from "@/stores/ThemeSwitcherStore";
+import {useThemeStore} from "../../stores/ThemeSwitcherStore";
 
 const themeStore = useThemeStore();
 

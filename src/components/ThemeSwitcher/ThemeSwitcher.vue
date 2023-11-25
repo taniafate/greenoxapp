@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts"> 
-import {useThemeStore} from "@/stores/ThemeSwitcherStore";
+import {useThemeStore} from "../../stores/ThemeSwitcherStore";
 import IconTheme from '../../components/icons/IconTheme.vue';
 
 const themeStore = useThemeStore();
@@ -22,4 +22,4 @@ const themeStore = useThemeStore();
 
 <style src="./ThemeSwitcher.style.scss" lang="scss" scoped>
   
-</style>@/stores/themeSwitcherStore@/stores/ThemeSwitcherStore
+</style>

@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import {useThemeStore} from "@/stores/ThemeSwitcherStore";
+import {useThemeStore} from "../../stores/ThemeSwitcherStore";
 
 const themeStore = useThemeStore();
 </script>

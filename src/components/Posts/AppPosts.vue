@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { usePostsStore } from '../../stores/PostsStore';
+import { usePostsStore } from "../../stores/PostsStore";
 import { onMounted } from 'vue';
 
 const store = usePostsStore();

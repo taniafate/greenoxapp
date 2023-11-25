@@ -10,7 +10,7 @@
 import { computed } from 'vue';
 import AppContainer from '../AppContainer/AppContainer.vue';
 import { useMedia } from '../../composables/useMedia';
-import {useThemeStore} from "@/stores/ThemeSwitcherStore";
+import {useThemeStore} from "../../stores/ThemeSwitcherStore";
 
 const themeStore = useThemeStore();
 
