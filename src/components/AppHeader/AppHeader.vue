@@ -1,5 +1,8 @@
 <template>
-  <header class="header">
+  <header
+    class="header"
+    :class="{ dark: themeStore.theme === 'dark' }"
+    >
     <AppLogo />
     <AppNavBar />
     <ThemeSwitcher />
@@ -7,10 +10,12 @@
 </template>
 
 <script setup lang="ts">
+import { useThemeStore } from '@/stores/ThemeSwitcherStore';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher.vue';
 import AppLogo from '../UI/AppLogo/AppLogo.vue';
 import AppNavBar from '../UI/AppNavBar/AppNavBar.vue';
 
+const themeStore = useThemeStore();
 </script>
 
 <style src="./AppHeader.style.scss" lang="scss" scoped>

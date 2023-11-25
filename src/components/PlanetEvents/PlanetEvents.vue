@@ -1,18 +1,18 @@
 <template>
-  <div class="card-wrapper" v-if="store.planetEvents" >
+  <div class="card-wrapper" v-if="store.planetEvents" :class="{ dark: themeStore.theme === 'dark' }">
     <div class="card-head">
       <h2 class="card-title">Volcanoes</h2>
       <p class="card-description">{{ store.planetEvents.description }}</p>
     </div>
     <div class="decorator"></div>
     <div class="card-events-wrapper">
-      <div class="card-events" v-for="pEvent in store.planetEvents.events" :key="pEvent.id" >
+      <div class="card-events" :class="{ dark: themeStore.theme === 'dark' }" v-for="pEvent in store.planetEvents.events" :key="pEvent.id" >
         <div class="card-events-up">
-          <h3 class="event-title" >{{ pEvent.title }}</h3>
+          <h3 class="event-title" :class="{ dark: themeStore.theme === 'dark' }">{{ pEvent.title }}</h3>
         </div>
         <div class="card-events-mid">
           <IconGeo />
-          <p class="event-geometries" >{{ pEvent.geometries[0].coordinates.join(', ') }}</p>
+          <p class="event-geometries" :class="{ dark: themeStore.theme === 'dark' }">{{ pEvent.geometries[0].coordinates.join(', ') }}</p>
         </div>
         <div class="card-events-down">
           <p class="event-category">{{  pEvent.categories[0].title }}</p>
@@ -28,8 +28,9 @@
 import { usePlanetEventsStore } from '@/stores/PlanetEventsStore';
 import { onMounted } from 'vue';
 import IconGeo from '../icons/IconGeo.vue';
+import { useThemeStore } from '@/stores/ThemeSwitcherStore';
 
-
+const themeStore = useThemeStore();
 const store = usePlanetEventsStore();
 
 onMounted(() => {
