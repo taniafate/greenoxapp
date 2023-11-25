@@ -21,3 +21,18 @@ button {
 input {
   all: unset;
 }
+
+input::-webkit-input-placeholder {
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+input::-moz-placeholder {
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+input:-ms-input-placeholder {
+  box-sizing: border-box;
+  opacity: 0.8;
+}

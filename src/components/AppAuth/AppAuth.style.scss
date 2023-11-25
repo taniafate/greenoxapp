@@ -7,17 +7,28 @@
   box-sizing: border-box;
   background: #e1e1e1;
   border-radius: 18px;
-  width: 700px;
+  width: 640px;
   height: 500px;
   box-sizing: border-box;
 
   .form-auth-title {
-    margin-bottom: 10px;
     font-size: 1.2rem;
   }
 
   .form-auth-redirect {
     font-size: 0.8rem;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+
+    .form-auth-redirect-link {
+      color: #009421;
+      margin-left: 8px;
+    }
+
+    .form-auth-redirect-link.dark {
+      color: #6fff2d;
+    }
   }
 
   .form-auth-style {
@@ -28,9 +39,9 @@
   
     .auth-label {
       width: 400px;
-      height: 30px;
-      margin-top: 20px;
-      font-size: 1rem;
+      height: 24px;
+      margin-top: 10px;
+      font-size: 0.9rem;
     }
 
     .auth-input {
@@ -38,17 +49,39 @@
       width: 400px;
       height: 48px;
       border: 1.6px solid white;
-      opacity: 0.6;
       border-radius: 8px;
-      padding: 8px;
+      cursor: pointer;
+      align-items: center;
+    }
+
+    .auth-input.email {
+      background: url('../../assets/IconLogin.svg') no-repeat;
+      background-position: 10px 10px;
+      padding: 12px 20px 12px 40px;
+    }
+
+    .auth-input.email:focus {
+      background: none;
+    }
+
+    .auth-input.password {
+      background: url('../../assets/IconPassword.svg') no-repeat;
+      background-position: 10px 10px;
+      padding: 12px 20px 12px 40px;
+    }
+
+    .auth-input.password:focus {
+      background: none;
     }
 
     .form-auth-button {
       width: 400px;
       height: 48px;
       border-radius: 8px;
-      margin-top: 40px;
-      background: #6fff2d;
+      margin-top: 38px;
+      margin-bottom: 20px;
+      background: #92FF5E;
+      box-shadow: 0px 4px 8px 0px rgba(40, 136, 9, 0.15);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -57,6 +90,7 @@
 
     .form-auth-button.dark {
       background: #009421;
+      box-shadow: 0px 4px 8px 0px rgba(146, 255, 94, 0.10);
     }
   }
 }

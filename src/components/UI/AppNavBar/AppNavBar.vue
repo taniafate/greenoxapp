@@ -4,7 +4,7 @@
   >
     <router-link class="routerLink" active-class="active" to="/">Home</router-link>
     <router-link class="routerLink" active-class="active" to="/about">About</router-link>
-    <router-link class="routerLink" active-class="active" to="/login">Sign in</router-link>
+    <router-link class="routerLink auth" active-class="active" to="/login">Sign in</router-link>
   </nav>
 </template>
 
