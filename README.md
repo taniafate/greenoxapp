@@ -19,4 +19,4 @@
 |      10| Deploy (Vercel)                                  |
 
 The idea of this pet-project and UX/UI design were also developed by me using Figma.
-The images were taken from Unsplash.
+The free images were taken from Unsplash and Figma Community.
