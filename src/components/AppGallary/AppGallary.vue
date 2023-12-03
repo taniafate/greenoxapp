@@ -7,7 +7,7 @@
       class="gallary-item"
       :class="{ dark: theme === 'dark' }"
       >
-      <div class="gallary-item-image" :style="{ backgroundImage: `url(${(gallaryButton.bgImage)})` }"></div>
+      <div class="gallary-item-image" :style="{ backgroundImage: `url(${(gallaryButton.backgroundImage)})` }"></div>
       <div class="gallary-item-title" :class="{ dark: theme === 'dark' }">
         <span>
           {{ gallaryButton.title }}
