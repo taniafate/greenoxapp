@@ -1,5 +1,5 @@
 <template>
-  <button class="intro-button">Get started free</button>
+  <button class="intro-button" @click="$router.push('/login')">Get started free</button>
 </template>
 
 <script setup lang="ts">

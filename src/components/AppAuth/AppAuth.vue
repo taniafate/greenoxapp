@@ -18,10 +18,14 @@
       <input class="auth-input password" type="password" name="auth-pass" placeholder="Password*" required>
       <button class="form-auth-button" type="submit" name="form-auth-submit" :class="{ dark: theme === 'dark' }">Sign in</button>
     </form>
+    <AuthDarkSticker class="auth-sticker" v-if="theme === 'dark'" />
+    <AuthLightSticker class="auth-sticker" v-else />
   </div>
 </template>
 
 <script setup lang="ts">
+import AuthDarkSticker from '@/assets/pictures/AuthDarkSticker.vue';
+import AuthLightSticker from '@/assets/pictures/AuthLightSticker.vue';
 import { useThemeStore } from '@/stores/ThemeToggleStore';
 import { storeToRefs } from 'pinia';
 
