@@ -4,12 +4,12 @@ export const gallaryButtons = [
   {
     RoutesLink: RoutesLinks.VOLCANOES,
     title: 'Volcanoes',
-    bgImage: '/src/assets/pictures/volcanoesImage.png'
+    bgImage: '@/assets/pictures/volcanoesImage.png'
   },
   {
     RoutesLink: RoutesLinks.ICE,
     title: 'Sea and Lake Ice',
-    bgImage: '/src/assets/pictures/iceImage.png'
+    bgImage: '../assets/pictures/iceImage.png'
   },
   {
     RoutesLink: RoutesLinks.WILDFIRES,
