@@ -1,5 +1,6 @@
 ## The application GREENOX was developed as a part of a VUE3 intensive course.
 
+### Natural disaster monitor app: getting data on current natural events from the API.
 
 ### The type of stack used in this application consists of frontend technology:
 
