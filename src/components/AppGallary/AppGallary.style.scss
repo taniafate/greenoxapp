@@ -26,6 +26,23 @@
       border-radius: 18px 18px 0 0;
     }
 
+    .gallary-item-image.volcanoes {
+      background-image: url('../../assets/pictures/volcanoesImage.png');
+    }
+
+    .gallary-item-image.ice {
+      background-image: url('../../assets/pictures/iceImage.png');
+    }
+
+    .gallary-item-image.wildfires {
+      background-image: url('../../assets/pictures/wildfiresImage.png');
+    }
+
+    .gallary-item-image.floods {
+      background-image: url('../../assets/pictures/floodsImage.png');
+    }
+
+
     .gallary-item-title {
       width: 100%;
       height: 22%;
