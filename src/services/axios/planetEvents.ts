@@ -2,7 +2,7 @@ import type { NASAApiResponse } from "@/types";
 import axios, { type AxiosResponse } from "axios";
 
 const API_BASE_URL = 'https://eonet.gsfc.nasa.gov/api/v2.1/';
-const NASA_API_KEY = 'DEMO_KEY'
+const NASA_API_KEY = import.meta.env.VITE_API_KEY || 'DEMO_KEY';
 
 export const apiInstance = axios.create({
   baseURL: API_BASE_URL,
@@ -21,5 +21,8 @@ const request = {
 };
 
 export const PlanetEvent = {
-  getEvents: () => request.get(`categories/12?status=open&api_key=${NASA_API_KEY}`),
+  getVolcanoes: () => request.get(`categories/12?status=open&api_key=${NASA_API_KEY}`),
+  getIce: () => request.get(`categories/15?status=open&api_key=${NASA_API_KEY}`),
+  getWildfires: () => request.get(`categories/8?status=open&api_key=${NASA_API_KEY}`),
+  getFloods: () => request.get(`categories/9?status=open&api_key=${NASA_API_KEY}`),
 };

@@ -4,33 +4,52 @@
   flex-direction: row;
   width: fit-content;
   height: fit-content;
-}
-.routerLink {
-  box-sizing: border-box;
-  display: block;
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  margin: 10px;
-}
-.active {
-  border-bottom: 1.6px solid white;
+  margin-left: 70px;
+
+  .routerLink {
+    box-sizing: border-box;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin: 10px;
+  }
+  .active {
+    border-bottom: 1.6px solid white;
+  }
+  
+  .routerLink:hover {
+    scale: 1.02;
+    transition: all 0.1s ease-in;
+  }
+  
+  .routerLink:focus {
+    scale: 0.98;
+    transition: all 0.1s ease-in;
+  }
 }
 
-.routerLink:hover {
-  scale: 1.02;
-  transition: all 0.1s ease-in;
-}
+@media only screen and (max-width: 450px) {
+  .navBar {
+    margin-left: 0;
+    margin-right: 100px;
 
-.routerLink:focus {
-  scale: 0.98;
-  transition: all 0.1s ease-in;
+    .routerLink {
+      font-size: 0.8rem;
+      margin: 4px;
+    }
+  }
 }
+@media only screen and (max-width: 375px) {
+  .navBar {
+    margin-right: 20px;
 
-.auth {
-  position: relative;
-  right: -614px;
+    .routerLink {
+      font-size: 0.8rem;
+      margin: 4px;
+    }
+  }
 }

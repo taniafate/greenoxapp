@@ -1,0 +1,45 @@
+.themeSwitcher {
+  box-sizing: border-box;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  border: 1.6px solid white;
+  width: 54px;
+  height: 26px;
+  font-size: 11px;
+  color: var(--light-100);
+  padding: 0 4px 0 0;
+  background: var(--green-300);
+
+  .themeSwitcherSpan {
+    display: block;
+    margin-bottom: 1px;
+    margin-right: 2px;
+  }
+}
+
+.themeSwitcher:hover {
+  scale: 1.02;
+  transition: all 0.1s ease-in;
+  background: var(--dark-400);
+}
+
+.themeSwitcher:focus {
+  scale: 0.98;
+  transition: all 0.1s ease-in;
+}
+
+.themeSwitcher.dark {
+  background: var(--dark-400);
+
+  .themeSwitcherSpan {
+    display: block;
+  }
+}
+
+.themeSwitcher.dark:hover {
+  background: var(--green-300);
+}

@@ -1,0 +1,36 @@
+.breadcrumbs-wrapper {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8rem;
+  width: 100%;
+  height: fit-content;
+  justify-content: start;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+
+  .breadcrumbs {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .breadcrumb-link {
+      display: block;
+      opacity: 0.8;
+      color: var(--dark-300);
+    }
+
+    .breadcrumb-link.dark {
+      color: var(--light-100);
+    }
+
+    .breadcrumb-link-active {
+      color: var(--green-300);
+    }
+
+    .breadcrumb-link-active.dark {
+      color: var(--green-100);
+    }
+  }  
+}

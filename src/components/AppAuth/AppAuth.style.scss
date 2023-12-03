@@ -5,11 +5,10 @@
   justify-content: center;
   padding: 12px;
   box-sizing: border-box;
-  background: #e1e1e1;
+  background: var(--light-300);
   border-radius: 18px;
-  width: 640px;
-  height: 500px;
-  box-sizing: border-box;
+  width: 100%;
+  height: 520px;
 
   .form-auth-title {
     font-size: 1.2rem;
@@ -17,17 +16,17 @@
 
   .form-auth-redirect {
     font-size: 0.8rem;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 
     .form-auth-redirect-link {
-      color: #009421;
+      color: var(--green-300);
       margin-left: 8px;
     }
 
     .form-auth-redirect-link.dark {
-      color: #6fff2d;
+      color: var(--green-100);
     }
   }
 
@@ -39,23 +38,23 @@
   
     .auth-label {
       width: 400px;
-      height: 24px;
+      height: 22px;
       margin-top: 10px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
 
     .auth-input {
       box-sizing: border-box;
       width: 400px;
       height: 48px;
-      border: 1.6px solid white;
+      border: 1.6px solid rgb(186, 186, 186);
       border-radius: 8px;
       cursor: pointer;
       align-items: center;
     }
 
     .auth-input.email {
-      background: url('../../assets/IconLogin.svg') no-repeat;
+      background: url('../../assets/icons/IconLogin.svg') no-repeat;
       background-position: 10px 10px;
       padding: 12px 20px 12px 40px;
     }
@@ -65,7 +64,7 @@
     }
 
     .auth-input.password {
-      background: url('../../assets/IconPassword.svg') no-repeat;
+      background: url('../../assets/icons/IconPassword.svg') no-repeat;
       background-position: 10px 10px;
       padding: 12px 20px 12px 40px;
     }
@@ -78,9 +77,9 @@
       width: 400px;
       height: 48px;
       border-radius: 8px;
-      margin-top: 38px;
+      margin-top: 30px;
       margin-bottom: 20px;
-      background: #92FF5E;
+      background: var(--green-100);
       box-shadow: 0px 4px 8px 0px rgba(40, 136, 9, 0.15);
       display: flex;
       justify-content: center;
@@ -89,12 +88,64 @@
     }
 
     .form-auth-button.dark {
-      background: #009421;
+      background: var(--green-300);
       box-shadow: 0px 4px 8px 0px rgba(146, 255, 94, 0.10);
     }
   }
 }
 
 .form-auth.dark {
-  background: #373737;
+  background: var(--dark-300);
+}
+
+@media only screen and (min-width: 1200px) {
+  .form-auth {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .form-auth {
+
+    .form-auth-style {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+
+      .auth-label {
+        width: 300px; 
+      }
+
+      .auth-input {
+        width: 300px;
+      }
+
+      .form-auth-button {
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .form-auth {
+
+    .form-auth-style {
+      width: 250px;
+
+      .auth-label {
+        width: 250px; 
+      }
+
+      .auth-input {
+        width: 250px;
+      }
+
+      .form-auth-button {
+        width: 250px;
+      }
+    }
+  }
 }

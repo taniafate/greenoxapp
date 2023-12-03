@@ -1,0 +1,21 @@
+.auth-links {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login-link {
+    display: block;
+    text-align: center;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .auth-links {
+  
+    .login-link {
+      margin-right: 14px;
+    }
+  }
+}

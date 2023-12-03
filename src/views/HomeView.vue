@@ -1,27 +1,15 @@
 <template>
   <div class="home-wrapper">
     <AppContainer class="home-container" :width="1200" :is-full-width="false">
-      <PlanetEvents />
-      <div class="decorator" :class="{ dark: themeStore.theme === 'dark' }">
-        <div class="decorator-content">
-          <EventSticker class="decorator-sticker" />
-        </div>
-      </div>
+      <AppIntro />
     </AppContainer>
   </div>
 </template>
 
 
 <script setup lang="ts">
-
-import { useThemeStore } from '../stores/ThemeToggleStore';
 import AppContainer from '../components/AppContainer/AppContainer.vue';
-import PlanetEvents from '../components/PlanetEvents/PlanetEvents.vue';
-import EventSticker from '../components/pictures/EventSticker.vue';
-
-const themeStore = useThemeStore();
-
-
+import AppIntro from '../components/AppIntro/AppIntro.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -34,37 +22,20 @@ const themeStore = useThemeStore();
   font-size: 14px;
 }
 
-.decorator {
-  width: 180px;
-  height: 500px;
-  background: #e1e1e1;
-  border-radius: 18px;
-  margin-left: 10px;
-  padding: 12px;
-  z-index: 0;
+@media only screen and (max-width: 767px) {
 
-  .decorator-content {
-    width: 100%;
-    height: 100%;
-    background: #e1e1e1;
-    background-image: url("../assets/volcanoesImage.png");
-    border-radius: 16px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-    background-repeat:no-repeat;
-    background-position: center center;
-    z-index: -1;
-    position: relative;
-
-    .decorator-sticker {
-      z-index: 2;
-      position:absolute;
-      top: 18px;
-      right: -4px;
-    }
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
-.decorator.dark {
-  background: #373737;
+@media only screen and (min-width: 767px) {
+  .home-container {
+    display: flex;
+    justify-content: center;
+  }
 }
-</style>../stores/ThemeToggleStore
+
+</style>

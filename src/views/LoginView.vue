@@ -17,11 +17,18 @@ import AppAuth from '@/components/AppAuth/AppAuth.vue';
 .login-wrapper {
   flex-grow: 1;
   font-size: 14px;
-  display: flex;
-  justify-content: center;
 }
 
 .login-container {
   font-size: 14px;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .login-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 </style>

@@ -7,9 +7,17 @@
   width: 100%;
   padding: 0px 10px 0px 10px;
   align-items: center;
-  background: linear-gradient(180deg, #068421 0%, #009621 100%);
+  background: var(--green-400);
+  z-index: 2;
+
+  .header-right-side {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header.dark {
-  background: #373737;
+  background: var(--dark-300);
 }

@@ -1,8 +1,18 @@
-.logo {
-  display: block;
+.logo-wrapper {
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
-  width: 35px;
-  height: 36px;
-  padding: 0;
+  align-items: center;
+
+  .logo {
+    display: block;
+    width: 35px;
+    height: 36px;
+  }
 }
 
+@media only screen and (max-width: 450px) {
+  .logo {
+    margin-right: 10px;
+  }
+}

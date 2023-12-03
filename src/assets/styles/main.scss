@@ -1,0 +1,38 @@
+@import './base.scss';
+
+#app {
+  font-weight: normal;
+}
+
+a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: var(--light-100);
+  transition: 0.4s;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+input {
+  all: unset;
+}
+
+input::-webkit-input-placeholder {
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+input::-moz-placeholder {
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+input:-ms-input-placeholder {
+  box-sizing: border-box;
+  opacity: 0.8;
+}

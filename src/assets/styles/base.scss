@@ -1,0 +1,41 @@
+:root {
+--dark-100: #6A6A6A;
+--dark-200: #636363;
+--dark-300: #373737;
+--dark-400: #252525;
+
+--light-100: #FFFFFF;
+--light-200: #F6F6F6;
+--light-300: #ECECEC;
+--light-400: #E1E1E1;
+
+--green-100: #15FF49;
+--green-200: #0DDD3A;
+--green-300: #009421;
+--green-400: linear-gradient(180deg, #068421 0%, #009621 100%);
+
+--blue-100: #749FFD;
+--blue-200: #395fb0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
