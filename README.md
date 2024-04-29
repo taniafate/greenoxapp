@@ -1,4 +1,4 @@
-## The application GREENOX was developed as a part of a VUE3 intensive course.
+## GREENOX APP
 
 #### Natural disaster monitor app: getting data on current natural events from the API.
 
