@@ -1,7 +1,7 @@
 <template>
   <div class="volcanoes-wrapper">
     <AppContainer class="volcanoes-container" :width="1200" :is-full-width="false">
-      <VolcanoesEvents />
+      <PlanetEvents :events="volcanoesEvents!" :theme="theme" />
       <div class="decorator" :class="{ dark: theme === 'dark' }">
         <div class="decorator-content">
           <EventSticker class="decorator-sticker"/>
@@ -12,14 +12,24 @@
 </template> 
 
 <script setup lang="ts">
-import VolcanoesEvents from '@/components/PlanetEvents/VolcanoesEvents.vue';
 import EventSticker from '@/assets/pictures/EventSticker.vue';
 import { useThemeStore } from '@/stores/ThemeToggleStore';
 import { storeToRefs } from 'pinia';
+import { useVolcanoesEventsStore } from '@/stores/VolcanoesEventsStore';
+import { onMounted } from 'vue';
+import PlanetEvents from '@/components/PlanetEvents/PlanetEvents.vue';
 
 const themeStore = useThemeStore();
 const { theme } = storeToRefs(themeStore);
 
+const store = useVolcanoesEventsStore();
+const { volcanoesEvents } = storeToRefs(store);
+
+const { getVolcanoesEvents } = store;
+
+onMounted(() => {
+  getVolcanoesEvents();
+});
 </script>
 
 <style lang="scss" scoped>
@@ -84,5 +94,4 @@ const { theme } = storeToRefs(themeStore);
     justify-content: center;
   }
 }
-
 </style>

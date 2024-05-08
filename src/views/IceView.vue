@@ -1,7 +1,7 @@
 <template>
   <div class="ice-wrapper">
     <AppContainer class="ice-container" :width="1200" :is-full-width="false">
-      <IceEvents />
+      <PlanetEvents :events="iceEvents!" :theme="theme" />
       <div class="decorator" :class="{ dark: theme === 'dark' }">
         <div class="decorator-content">
           <EventSticker class="decorator-sticker"/>
@@ -12,15 +12,24 @@
 </template> 
 
 <script setup lang="ts">
-
-import IceEvents from '@/components/PlanetEvents/IceEvents.vue';
 import EventSticker from '@/assets/pictures/EventSticker.vue';
 import { useThemeStore } from '@/stores/ThemeToggleStore';
 import { storeToRefs } from 'pinia';
+import { useIceEventsStore } from '@/stores/IceEventsStore';
+import { onMounted } from 'vue';
+import PlanetEvents from '@/components/PlanetEvents/PlanetEvents.vue';
 
 const themeStore = useThemeStore();
 const { theme } = storeToRefs(themeStore);
 
+const store = useIceEventsStore();
+const { iceEvents } = storeToRefs(store);
+
+const { getIceEvents } = store;
+
+onMounted(() => {
+  getIceEvents();
+});
 </script>
 
 <style lang="scss" scoped>
@@ -68,7 +77,6 @@ const { theme } = storeToRefs(themeStore);
 .decorator.dark {
   background: var(--dark-300);
 }
-
 
 @media only screen and (max-width: 767px) {
 

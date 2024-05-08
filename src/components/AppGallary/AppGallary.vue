@@ -10,7 +10,6 @@
       <div
         class="gallary-item-image"
         :class="[gallaryButton.class]"
-        
       >
       </div>
       <div class="gallary-item-title" :class="{ dark: theme === 'dark' }">
@@ -29,9 +28,6 @@ import { storeToRefs } from 'pinia';
 
 const themeStore = useThemeStore();
 const { theme } = storeToRefs(themeStore);
-
 </script>
 
-<style src="./AppGallary.style.scss" lang="scss" scoped>
-
-</style>
+<style src="./AppGallary.style.scss" lang="scss" scoped></style>

@@ -31,9 +31,6 @@ import { storeToRefs } from 'pinia';
 
 const themeStore = useThemeStore();
 const { theme } = storeToRefs(themeStore);
-
 </script>
 
-<style src="./AppAuth.style.scss" lang="scss" scoped>
-
-</style>
+<style src="./AppAuth.style.scss" lang="scss" scoped></style>

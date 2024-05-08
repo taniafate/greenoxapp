@@ -4,7 +4,6 @@ import { defineStore } from "pinia";
 import { ref } from "vue";
 
 export const useIceEventsStore = defineStore('IceEventsStore', () => {
-
   const iceEvents = ref<NASAApiResponse>();
 
   async function getIceEvents() {

@@ -7,7 +7,6 @@
     </div>
     <div class="intro-image"></div>
   </section>
-  
 </template>
 
 <script setup lang="ts">
@@ -15,12 +14,8 @@ import { useThemeStore } from '@/stores/ThemeToggleStore';
 import { storeToRefs } from 'pinia';
 import AppIntroButton from '../UI/AppIntroButton/AppIntroButton.vue';
 
-
 const themeStore = useThemeStore();
 const { theme } = storeToRefs(themeStore);
-
 </script>
 
-<style src="./AppIntro.style.scss" lang="scss" scoped>
-
-</style>
+<style src="./AppIntro.style.scss" lang="scss" scoped></style>

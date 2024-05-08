@@ -100,7 +100,7 @@
         .event-geometries {
           margin-left: 4px;
           color: var(--green-300);
-          font-size: 0.96rem;
+          font-size: 0.92rem;
         }
 
         .event-geometries.dark {
@@ -110,25 +110,20 @@
       }
 
       .card-events-down {
+        width: 100%;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin-top: 18px;
 
         .event-category {
           display: block;
-          font-size: 0.8rem;
-          width: fit-content;
-          height: fit-content;
+          font-size: 0.86rem;
         }
 
         .event-data {
           display: block;
-          font-size: 0.75rem;
-          width: fit-content;
-          height: fit-content;
-          margin-left: 68px;
+          font-size: 0.8rem;
         }
         .event-data.ice {
           margin-left: 22px;

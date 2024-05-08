@@ -20,9 +20,6 @@ import { storeToRefs } from 'pinia';
 
 const themeStore = useThemeStore();
 const { theme, toggleTheme } = storeToRefs(themeStore);
-
 </script>
 
-<style src="./ThemeSwitcher.style.scss" lang="scss" scoped>
-  
-</style>
+<style src="./ThemeSwitcher.style.scss" lang="scss" scoped></style>

@@ -9,9 +9,6 @@
 
 <script setup lang="ts">
   import { RouterLink } from 'vue-router';
-  
 </script>
 
-<style src="./AppNavBar.style.scss" lang="scss" scoped>
-  
-</style>
+<style src="./AppNavBar.style.scss" lang="scss" scoped></style>

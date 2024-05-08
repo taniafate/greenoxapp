@@ -9,8 +9,6 @@
 
 <script setup lang="ts">
 import AppAuth from '@/components/AppAuth/AppAuth.vue';
-
-
 </script>
 
 <style lang="scss" scoped>

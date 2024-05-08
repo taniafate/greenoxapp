@@ -37,5 +37,4 @@ import AppIntro from '../components/AppIntro/AppIntro.vue';
     justify-content: center;
   }
 }
-
 </style>

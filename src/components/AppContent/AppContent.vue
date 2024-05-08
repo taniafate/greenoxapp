@@ -18,8 +18,6 @@ import { storeToRefs } from 'pinia';
 const themeStore = useThemeStore();
 const { theme } = storeToRefs(themeStore);
 
-
-
 const { device } = useMedia();
 
 const deviceWidth = computed(() => {
@@ -27,7 +25,6 @@ const deviceWidth = computed(() => {
   if (device.value === 'tablet') return 700;
   return 700;
 });
-
 </script>
 
 <style src="./AppContent.style.scss" lang="scss" scoped />

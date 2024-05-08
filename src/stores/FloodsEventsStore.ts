@@ -4,7 +4,6 @@ import { defineStore } from "pinia";
 import { ref } from "vue";
 
 export const useFloodsEventsStore = defineStore('FloodsEventsStore', () => {
-
   const floodsEvents = ref<NASAApiResponse>();
 
   async function getFloodsEvents() {

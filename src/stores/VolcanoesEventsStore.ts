@@ -3,9 +3,7 @@ import { defineStore } from 'pinia';
 import type { NASAApiResponse } from '@/types';
 import { PlanetEvent } from '@/services/axios/planetEvents';
 
-
 export const useVolcanoesEventsStore = defineStore('VolcanoesEventsStore', () => {
-
   const volcanoesEvents = ref<NASAApiResponse>();
 
   async function getVolcanoesEvents() {

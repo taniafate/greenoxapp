@@ -1,7 +1,7 @@
 <template>
   <div class="floods-wrapper">
     <AppContainer class="floods-container" :width="1200" :is-full-width="false">
-      <FloodsEvents />
+      <PlanetEvents :events="floodsEvents!" :theme="theme" />
       <div class="decorator" :class="{ dark: theme === 'dark' }">
         <div class="decorator-content">
           <EventSticker class="decorator-sticker"/>
@@ -12,15 +12,24 @@
 </template> 
 
 <script setup lang="ts">
-
-import FloodsEvents from '@/components/PlanetEvents/FloodsEvents.vue';
 import EventSticker from '@/assets/pictures/EventSticker.vue';
 import { storeToRefs } from 'pinia';
 import { useThemeStore } from '@/stores/ThemeToggleStore';
+import PlanetEvents from '@/components/PlanetEvents/PlanetEvents.vue';
+import { useFloodsEventsStore } from '@/stores/FloodsEventsStore';
+import { onMounted } from 'vue';
 
 const themeStore = useThemeStore();
 const { theme } = storeToRefs(themeStore);
 
+const store = useFloodsEventsStore();
+const { floodsEvents } = storeToRefs(store);
+
+const { getFloodsEvents } = store;
+
+onMounted(() => {
+  getFloodsEvents();
+});
 </script>
 
 <style lang="scss" scoped>
@@ -68,7 +77,6 @@ const { theme } = storeToRefs(themeStore);
 .decorator.dark {
   background: var(--dark-300);
 }
-
 
 @media only screen and (max-width: 767px) {
 

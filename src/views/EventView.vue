@@ -10,7 +10,6 @@
 <script setup lang="ts">
 import AppGallary from '@/components/AppGallary/AppGallary.vue';
 import AppContainer from '../components/AppContainer/AppContainer.vue'; 
-
 </script>
 
 <style lang="scss" scoped>

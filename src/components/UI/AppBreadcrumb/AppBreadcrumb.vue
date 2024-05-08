@@ -39,9 +39,6 @@ watch(route, (newRoute) => {
 
 const themeStore = useThemeStore();
 const { theme } = storeToRefs(themeStore);
-
 </script>
 
-<style src="./AppBreadcrumb.style.scss" lang="scss" scoped>
-
-</style>
+<style src="./AppBreadcrumb.style.scss" lang="scss" scoped></style>

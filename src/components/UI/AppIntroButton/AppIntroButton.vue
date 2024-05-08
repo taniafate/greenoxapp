@@ -2,10 +2,6 @@
   <button class="intro-button" @click="$router.push('/login')">Get started free</button>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style src="./AppIntroButton.style.scss" lang="scss" scoped>
-
-</style>
+<style src="./AppIntroButton.style.scss" lang="scss" scoped></style>
